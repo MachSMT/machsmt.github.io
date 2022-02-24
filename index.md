@@ -53,7 +53,8 @@ TACAS '21 [MachSMT: A Machine Learning-based Algorithm Selector for SMT Solvers}
   timestamp = {Fri, 14 May 2021 08:34:19 +0200},
   biburl    = {https://dblp.org/rec/conf/tacas/ScottNPNG21.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
-}```
+}
+```
 
 
 SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galois.com/papers/paper_7.pdf)
@@ -69,7 +70,8 @@ SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galoi
   booktitle = {Proceedings of the 17th International Workshop on Satisfiabilit Modulo Theories co-located with the 22nd International Conference on the Theory and Applications of Satisfiability Testing (SAT) 2020) July 7-12, 2019},
   year      = {2019},
   url       = {http://smt2019.galois.com/papers/paper_7.pdf},
-}```
+}
+```
 
 If you are a researcher leveraging ideas from MachSMT, please consider citing our work. To cite MachSMT, please use the TACAS paper. For the prelimiary work prior to MachSMT consider the SMT paper.
 
