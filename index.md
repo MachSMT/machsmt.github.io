@@ -13,7 +13,7 @@ MachSMT is not a replacement for SMT solvers by any means. Instead, it is a tool
 ## People
 * Joseph Scott
 * Aina Niemetz
-* Mathias Periner
+* Mathias Preiner
 * Saeed Nejati
 * Vijay Ganesh (Principal Investigator)
 
