@@ -11,11 +11,11 @@ MachSMT has been extensivly evaluated to demonstrate its efficiency and efficacy
 MachSMT is not a replacement for SMT solvers by any means. Instead, it is a tool that enables users to leverage the collective strength of the diverse set of algorithms implemented as part of these sophisticated solvers.
 
 ## People
-* Joseph Scott
-* Aina Niemetz
-* Mathias Preiner
-* Saeed Nejati
-* Vijay Ganesh (Principal Investigator)
+* [Joseph Scott](https://www.joe-scott.net/)
+* [Aina Niemetz](https://cs.stanford.edu/~niemetz/)
+* [Mathias Preiner](https://cs.stanford.edu/~preiner/)
+* [Saeed Nejati](https://ece.uwaterloo.ca/~snejati/)
+* [Vijay Ganesh (Principal Investigator)](https://ece.uwaterloo.ca/~vganesh/)
 
 The MachSMT would like to thank Pascal Poupart for his feedback on earlier versions of this work. 
 
