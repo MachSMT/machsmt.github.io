@@ -57,7 +57,7 @@ TACAS '21 [MachSMT: A Machine Learning-based Algorithm Selector for SMT Solvers}
 ```
 
 
-SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galois.com/papers/paper_7.pdf)
+<!-- SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galois.com/papers/paper_7.pdf)
 
 ```
 @misc{scott2019algorithm,
@@ -71,7 +71,7 @@ SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galoi
   year      = {2019},
   url       = {http://smt2019.galois.com/papers/paper_7.pdf},
 }
-```
+``` -->
 
 If you are a researcher leveraging ideas from MachSMT, please consider citing our work. To cite MachSMT, please use the TACAS paper. For the prelimiary work prior to MachSMT consider the SMT paper.
 
