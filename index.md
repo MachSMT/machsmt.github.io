@@ -2,187 +2,76 @@
 layout: default
 ---
 
-# BanditFuzz
+# MachSMT
 
-BanditFuzz is a multi-agent reinforcement learning guided performance fuzzing algorithm. BanditFuzz has extensively been considered in the context of Satisfiability Modulo Theories (SMT)  solvers. BanditFuzz constructs inputs that expose performance issues in a set of target solvers relative to a set of reference solvers. The `banditfuzz` tool is the first performance fuzzer that supports the entirety of the theories in the SMT-LIB initiative. 
+MachSMT is an algorithm selection tool for Satisfiability Modulo Theories (SMT) solvers. MachSMT supports the entirety of the SMT-LIB language. It deploys machine learning (ML) methods to construct both empirical hardness models (EHMs) and pairwise ranking comparators (PWCs) over state-of-the-art SMT solvers.  Given an input formula in SMT-LIB format, MachSMT leverages these learnt models to output a ranking of solvers based on predicted run time on that formula.
+
+MachSMT has been extensivly evaluated to demonstrate its efficiency and efficacy. We have evaluated MachSMT on state-of-the-art solvers in SMT-COMP '19 and '20. We observe MachSMT frequently improves on competition winners. Second, we evaluate MachSMT to select configurations from a single underlying solver, namely `cvc5` and observe significant empirical emprovements of static competition scripts. 
+
+MachSMT is not a replacement for SMT solvers by any means. Instead, it is a tool that enables users to leverage the collective strength of the diverse set of algorithms implemented as part of these sophisticated solvers.
 
 ## People
 * Joseph Scott
-* Federico Mora
-* Hammad Rehman
-* Trishal Sudula
+* Aina Niemetz
+* Mathias Periner
+* Saeed Nejati
 * Vijay Ganesh (Principal Investigator)
 
-The BanditFuzz team would like to thank Aina Niemetz, Mathias Periner, Martin Brain, Murphy Berzish, and Mitja Kulczynski for their feedback while the project was under development. 
+The MachSMT would like to thank Pascal Poupart for his feedback on earlier versions of this work. 
 
 ## SMT '20 Talk
 
-[![Talk](https://img.youtube.com/vi/OfZaIUXltf4/0.jpg)](https://youtu.be/OfZaIUXltf4?t=4013)
+[![Talk](https://img.youtube.com/vi/OfZaIUXltf4/0.jpg)](https://youtu.be/OfZaIUXltf4?t=5795)
 
 
 ## Publications
 
-[BanditFuzz: A Reinforcement-Learning Based Performance Fuzzer for SMT Solvers](https://www.semanticscholar.org/paper/BanditFuzz%3A-A-Reinforcement-Learning-Based-Fuzzer-Scott-Mora/4dd1361dd215cc2d02f178f4ec307b74a4f51cbb)
+TACAS '21 [MachSMT: A Machine Learning-based Algorithm Selector for SMT Solvers}](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7984560/)
 
 ```
-@inproceedings{DBLP:conf/vstte/ScottMG20,
+@inproceedings{DBLP:conf/tacas/ScottNPNG21,
   author    = {Joseph Scott and
-               Federico Mora and
+               Aina Niemetz and
+               Mathias Preiner and
+               Saeed Nejati and
                Vijay Ganesh},
-  editor    = {Maria Christakis and
-               Nadia Polikarpova and
-               Parasara Sridhar Duggirala and
-               Peter Schrammel},
-  title     = {BanditFuzz: {A} Reinforcement-Learning Based Performance Fuzzer for
-               {SMT} Solvers},
-  booktitle = {Software Verification - 12th International Conference, {VSTTE} 2020,
-               and 13th International Workshop, {NSV} 2020, Los Angeles, CA, USA,
-               July 20-21, 2020, Revised Selected Papers},
+  editor    = {Jan Friso Groote and
+               Kim Guldstrand Larsen},
+  title     = {MachSMT: {A} Machine Learning-based Algorithm Selector for {SMT} Solvers},
+  booktitle = {Tools and Algorithms for the Construction and Analysis of Systems
+               - 27th International Conference, {TACAS} 2021, Held as Part of the
+               European Joint Conferences on Theory and Practice of Software, {ETAPS}
+               2021, Luxembourg City, Luxembourg, March 27 - April 1, 2021, Proceedings,
+               Part {II}},
   series    = {Lecture Notes in Computer Science},
-  volume    = {12549},
-  pages     = {68--86},
-  publisher = {Springer},
-  year      = {2020},
-  url       = {https://doi.org/10.1007/978-3-030-63618-0\_5},
-  doi       = {10.1007/978-3-030-63618-0\_5},
-  timestamp = {Mon, 03 Jan 2022 22:15:02 +0100},
-  biburl    = {https://dblp.org/rec/conf/vstte/ScottMG20.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
-```
-
-[BanditFuzz: Fuzzing SMT Solvers with Multi-agent Reinforcement Learning](https://www.springerprofessional.de/en/banditfuzz-fuzzing-smt-solvers-with-multi-agent-reinforcement-le/19849098)
-
-```
-@inproceedings{DBLP:conf/fm/ScottSRMG21,
-  author    = {Joseph Scott and
-               Trishal Sudula and
-               Hammad Rehman and
-               Federico Mora and
-               Vijay Ganesh},
-  editor    = {Marieke Huisman and
-               Corina S. Pasareanu and
-               Naijun Zhan},
-  title     = {BanditFuzz: Fuzzing {SMT} Solvers with Multi-agent Reinforcement Learning},
-  booktitle = {Formal Methods - 24th International Symposium, {FM} 2021, Virtual
-               Event, November 20-26, 2021, Proceedings},
-  series    = {Lecture Notes in Computer Science},
-  volume    = {13047},
-  pages     = {103--121},
+  volume    = {12652},
+  pages     = {303--325},
   publisher = {Springer},
   year      = {2021},
-  url       = {https://doi.org/10.1007/978-3-030-90870-6\_6},
-  doi       = {10.1007/978-3-030-90870-6\_6},
-  timestamp = {Wed, 15 Dec 2021 10:33:04 +0100},
-  biburl    = {https://dblp.org/rec/conf/fm/ScottSRMG21.bib},
+  url       = {https://doi.org/10.1007/978-3-030-72013-1\_16},
+  doi       = {10.1007/978-3-030-72013-1\_16},
+  timestamp = {Fri, 14 May 2021 08:34:19 +0200},
+  biburl    = {https://dblp.org/rec/conf/tacas/ScottNPNG21.bib},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}```
+
+
+SMT '19 [An Algorithm Selection Approach for QF FP Solvers](http://smt2019.galois.com/papers/paper_7.pdf)
+
+```
+@misc{scott2019algorithm,
+  author    = {Joseph Scott and
+              Pascal Poupart and
+              Vijay Ganesh},
+  editor    = {Natasha Sharygina and
+              Joe Hendrix},
+  title     = {{An Algorithm Selection Approach for QF FP Solvers}},
+  booktitle = {Proceedings of the 17th International Workshop on Satisfiabilit Modulo Theories co-located with the 22nd International Conference on the Theory and Applications of Satisfiability Testing (SAT) 2020) July 7-12, 2019},
+  year      = {2019},
+  url       = {http://smt2019.galois.com/papers/paper_7.pdf},
 }
-```
-
-If you are a researcher leveraging ideas from BanditFuzz, please consider citing our work. To cite the BanditFuzz algorithm, please use the VSTTE paper. To cite the tool or multi-agent formulation, please use the FM paper.
-
-<!-- > This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
 
 ```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
-```
-The final element.
-``` -->
+If you are a researcher leveraging ideas from MachSMT, please consider citing our work. To cite MachSMT, please use the TACAS paper. For the prelimiary work prior to MachSMT consider the SMT paper.
+
