@@ -75,3 +75,5 @@ TACAS '21 [MachSMT: A Machine Learning-based Algorithm Selector for SMT Solvers}
 
 If you are a researcher leveraging ideas from MachSMT, please consider citing our work. To cite MachSMT, please use the TACAS paper. For the prelimiary work prior to MachSMT consider the SMT paper.
 
+## Logo Credits
+Ensign John Gay, U.S. Navy - This image was released by the United States Navy with the ID 990707-N-6483G-001
