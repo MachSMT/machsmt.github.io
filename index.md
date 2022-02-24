@@ -17,7 +17,7 @@ MachSMT is not a replacement for SMT solvers by any means. Instead, it is a tool
 * [Saeed Nejati](https://ece.uwaterloo.ca/~snejati/)
 * [Vijay Ganesh (Principal Investigator)](https://ece.uwaterloo.ca/~vganesh/)
 
-The MachSMT would like to thank Pascal Poupart for his feedback on earlier versions of this work. 
+The MachSMT team would like to thank Pascal Poupart for his feedback on earlier versions of this work. 
 
 ## SMT '20 Talk
 
